@@ -6,4 +6,12 @@
     <string name="title_activity_game">GameActivity</string>
     <string name="soundButtonText">Sound</string>
     <string name="configTextView">App\'s Sound: On or Off</string>
+
+    <string name="buttonAction">buttonAction</string>
+
+    <string name="x_move">X Move</string>
+    <string name="o_move">O Move</string>
+
+    <string name="empty">"  " </string>
+    <string name="title_activity_game2">GameActivity2</string>
 </resources>

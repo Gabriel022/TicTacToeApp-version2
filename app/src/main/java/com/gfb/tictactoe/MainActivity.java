@@ -10,11 +10,13 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button playButton;
     Button settingsButton;
+
 
 
 
@@ -33,14 +35,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-       // FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-     //   fab.setOnClickListener(new View.OnClickListener() {
-      //      @Override
-       //     public void onClick(View view) {
-      //          Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-      //                  .setAction("Action", null).show();
-       //     }
-      //  });
     }
 
     @Override
@@ -52,11 +46,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 y = new Intent(this, GameActivity.class);
                 startActivity(y);
                 break;
-            case R.id.settingsButton:
-                Intent z;
-                z = new Intent(this,SettingsActivity.class);
-                startActivity(z);
-                break;
+           // case R.id.settingsButton:
+            //    Intent z;
+             //   z = new Intent(this,SettingsActivity.class);
+            //    startActivity(z);
+            //    break;
 
 
 
@@ -73,9 +67,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+        //When the user selects an item from the options menu (including action items in the app bar),
+        // the system calls your activity's onOptionsItemSelected() method.
+        // This method passes the MenuItem selected. You can identify the item by calling getItemId(),
+        // which returns the unique ID for the menu item (defined by the android:id attribute in the menu
+        // resource or with an integer given to the add() method)
       //  int id = item.getItemId();
         Intent preferencesIntent = new Intent(this, SettingsActivity.class);
         startActivity(preferencesIntent);
